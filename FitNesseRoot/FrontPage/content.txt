@@ -1,0 +1,12 @@
+!1 Welcome to [[FitNesse][FitNesse.FitNesse]]!
+!3 ''The fully integrated stand-alone acceptance testing framework and wiki.''
+
+Made by: Kevin Nam
+For: ECSE428
+March 5th, 2017
+
+
+|[[Checking out a product Acceptance Tests][.FitNesse.UserGuide.CheckingOutProductOnAmazonTests]] | 'Acceptance tests for Amazon'|
+
+
+!note Release ${FITNESSE_VERSION}

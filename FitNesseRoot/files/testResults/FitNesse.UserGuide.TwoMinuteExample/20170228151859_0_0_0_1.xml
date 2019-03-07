@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>FitNesse.UserGuide.TwoMinuteExample</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>13</exceptions>
+    </counts>
+    <date>2017-02-28T15:19:00-05:00</date>
+    <runTimeInMillis>82</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+ &lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: /Users/knam/.m2/repository/com/kevinnam/assignment-2-ecse428/1.0-SNAPSHOT/assignment-2-ecse428-1.0-SNAPSHOT.jar&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td colspan="3" class="error"&gt;com.kevinnam.fitnesse.SeleniumTest&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="3"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NoClassDefFoundError: org/openqa/selenium/WebDriver
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.8.0_111]
+	at java.lang.Class.forName(Class.java:264) [rt.jar:1.8.0_111]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.getClass(DefaultInteraction.java:66) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.searchPathsForClass(DefaultInteraction.java:50) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.createInstance(DefaultInteraction.java:29) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimExecutionContext.create(SlimExecutionContext.java:52) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.create(StatementExecutor.java:79) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.MakeInstruction.executeInternal(MakeInstruction.java:26) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.handle(SlimService.java:168) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.accept(SlimService.java:138) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-standalone.jar:20161106]
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.WebDriver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) [rt.jar:1.8.0_111]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) [rt.jar:1.8.0_111]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) [rt.jar:1.8.0_111]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) [rt.jar:1.8.0_111]
+	at java.lang.Class.forName0(Native Method) [rt.jar:1.8.0_111]
+	at java.lang.Class.forName(Class.java:264) [rt.jar:1.8.0_111]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.getClass(DefaultInteraction.java:66) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.searchPathsForClass(DefaultInteraction.java:50) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.createInstance(DefaultInteraction.java:29) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimExecutionContext.create(SlimExecutionContext.java:52) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.create(StatementExecutor.java:79) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.MakeInstruction.executeInternal(MakeInstruction.java:26) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.handle(SlimService.java:168) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.accept(SlimService.java:138) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-standalone.jar:20161106]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Value1&lt;/td&gt;
+		&lt;td&gt;Value2&lt;/td&gt;
+		&lt;td&gt;add?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;3.0 &lt;span class="error"&gt;The instance decisionTable_0.setValue1. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;5.0 &lt;span class="error"&gt;The instance decisionTable_0.setValue2. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;8.0 &lt;span class="error"&gt;The instance decisionTable_0.add. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;2.0 &lt;span class="error"&gt;The instance decisionTable_0.setValue1. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;3.5 &lt;span class="error"&gt;The instance decisionTable_0.setValue2. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;5.5 &lt;span class="error"&gt;The instance decisionTable_0.add. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;6.0 &lt;span class="error"&gt;The instance decisionTable_0.setValue1. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;3.0 &lt;span class="error"&gt;The instance decisionTable_0.setValue2. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;9.0 &lt;span class="error"&gt;The instance decisionTable_0.add. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;5.0 &lt;span class="error"&gt;The instance decisionTable_0.setValue1. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;2.0 &lt;span class="error"&gt;The instance decisionTable_0.setValue2. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;7.0 &lt;span class="error"&gt;The instance decisionTable_0.add. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;</content>
+    <relativePageName>TwoMinuteExample</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_0', instruction='make', instanceName='decisionTable_0', className='com.kevinnam.fitnesse.SeleniumTest', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_4', instruction='call', instanceName='decisionTable_0', methodName='setValue1', args=[3.0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_4</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0.setValue1. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_5', instruction='call', instanceName='decisionTable_0', methodName='setValue2', args=[5.0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_5</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0.setValue2. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_7', instruction='call', instanceName='decisionTable_0', methodName='add', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_7</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0.add. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_9', instruction='call', instanceName='decisionTable_0', methodName='setValue1', args=[2.0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_9</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0.setValue1. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_10', instruction='call', instanceName='decisionTable_0', methodName='setValue2', args=[3.5]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_10</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0.setValue2. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_12', instruction='call', instanceName='decisionTable_0', methodName='add', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_12</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0.add. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_14', instruction='call', instanceName='decisionTable_0', methodName='setValue1', args=[6.0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_14</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0.setValue1. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_15', instruction='call', instanceName='decisionTable_0', methodName='setValue2', args=[3.0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_15</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0.setValue2. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_17', instruction='call', instanceName='decisionTable_0', methodName='add', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_17</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0.add. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_19', instruction='call', instanceName='decisionTable_0', methodName='setValue1', args=[5.0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_19</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0.setValue1. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_20', instruction='call', instanceName='decisionTable_0', methodName='setValue2', args=[2.0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_20</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0.setValue2. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_0_22', instruction='call', instanceName='decisionTable_0', methodName='add', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_0_22</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_0.add. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/bin/java -cp /Users/knam/dev/fitnesse-standalone.jar:/Users/knam/.m2/repository/com/kevinnam/assignment-2-ecse428/1.0-SNAPSHOT/assignment-2-ecse428-1.0-SNAPSHOT.jar:lib/*.jar fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>315</totalRunTimeInMillis>
+</testResults>
+

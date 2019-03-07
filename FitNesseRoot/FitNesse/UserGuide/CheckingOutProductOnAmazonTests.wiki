@@ -1,0 +1,64 @@
+---
+Help: Context: Checking out a product on Amazon Acceptance Tests
+Test
+saveId: 1238092849129
+ticketId: -8522914120834285308
+---
+!define TEST_SYSTEM {slim} 
+
+!path /Users/knam/dev/selenium-server-standalone-3.1.0.jar
+!path /Users/knam/.m2/repository/com/kevinnam/assignment-2-ecse428/1.0-SNAPSHOT/assignment-2-ecse428-1.0-SNAPSHOT.jar
+
+!define PRODUCT_URL {https://www.amazon.ca/Monoprice-115365-Select-Mini-Printer/dp/B01FL49VZE/ref=sr_1_1?ie=UTF8&qid=1488132110&sr=8-1&keywords=3d+printer}
+!define PRODUCT_NAME {Monoprice 115365 Monoprice Select Mini 3D Printer}
+!define CART_URL {https://www.amazon.ca/gp/cart/view.html/ref=nav_cart}
+
+
+|import|
+|fitnesse.slim.test|
+|fitnesse.fixtures|
+|org.openqa.selenium|
+|com.kevinnam.fitnesse|
+
+
+Given I am on a Amazon product page
+    When I press "Add to cart"
+    Then the product should exist in my shopping cart
+    And the checkout button exists
+
+!| AmazonFixture |
+| go to url | addProductToCart? | product name | productIsInCart? | checkoutButtonExists? |
+| ${PRODUCT_URL} | true | ${PRODUCT_NAME} | true | true |
+
+
+Given I am on a Amazon product page
+    And I have the same product that already exists in my shopping cart
+    When I press "Add to cart"
+    Then the product should exist in my shopping cart
+    And the quantity of the product should be equal to two
+    And the checkout button exists
+    
+!| AmazonFixture |
+| go to url | addProductToCartTwice? | product name | productIsInCart? | quantityIsTwo? | checkoutButtonExists? |
+| ${PRODUCT_URL} | true | ${PRODUCT_NAME} | true | true | true |
+
+Given I am on my current shopping cart
+    And I have a product that exists in my shopping cart
+    When I press "Delete"
+    Then the product should no longer exist in my shopping cart
+    And the checkout button does not exist
+    
+!| AmazonFixture |
+| go to url | addProductToCart? | product name | deleteProductFromCart? | productIsInCart? | checkoutButtonExists? |
+| ${PRODUCT_URL} | true | ${PRODUCT_NAME} | true | false | false |
+
+Given I am on my current shopping cart
+    And my shopping cart is empty
+    Then there is nothing to delete from the shopping cart
+    And the checkout button does not exist
+    
+!| AmazonFixture |
+| go to url | deleteProductFromCart? |  checkoutButtonExists? |
+| ${CART_URL} | false | false |
+
+

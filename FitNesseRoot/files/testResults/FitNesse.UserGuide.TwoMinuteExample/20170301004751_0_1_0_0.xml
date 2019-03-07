@@ -1,0 +1,2318 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>FitNesse.UserGuide.TwoMinuteExample</rootPath>
+    <result>
+    <counts>
+      <right>3</right>
+      <wrong>2</wrong>
+      <ignores>0</ignores>
+      <exceptions>6</exceptions>
+    </counts>
+    <date>2017-03-01T00:47:51-05:00</date>
+    <runTimeInMillis>28960</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+ &lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: /Users/knam/dev/selenium-server-standalone-3.1.0.jar&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: /Users/knam/.m2/repository/com/kevinnam/assignment-2-ecse428/1.0-SNAPSHOT/assignment-2-ecse428-1.0-SNAPSHOT.jar&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: PRODUCT_URL=https://www.amazon.ca/Monoprice-115365-Select-Mini-Printer/dp/B01FL49VZE/ref=sr_1_1?ie=UTF8&amp;amp;qid=1488132110&amp;amp;sr=8-1&amp;amp;keywords=3d+printer&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: PRODUCT_NAME=Monoprice 115365 Monoprice Select Mini 3D Printer&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: CART_URL=https://www.amazon.ca/gp/cart/view.html/ref=nav_cart&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.slim.test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.fixtures&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;org.openqa.selenium&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;com.kevinnam.fitnesse&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;Given I am on a Amazon product page&lt;br/&gt;    When I press "Add to cart"&lt;br/&gt;    Then the product should exist in my shopping cart&lt;br/&gt;    And the checkout button exists&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="5"&gt;&lt;span class="pass"&gt;AmazonFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;go to url&lt;/td&gt;
+		&lt;td&gt;addProductToCart?&lt;/td&gt;
+		&lt;td&gt;product name&lt;/td&gt;
+		&lt;td&gt;productIsInCart?&lt;/td&gt;
+		&lt;td&gt;checkoutButtonExists?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;https://www.amazon.ca/Monoprice-115365-Select-Mini-Printer/dp/B01FL49VZE/ref=sr_1_1?ie=UTF8&amp;qid=1488132110&amp;sr=8-1&amp;keywords=3d+printer&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Monoprice 115365 Monoprice Select Mini 3D Printer&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;Given I am on a Amazon product page&lt;br/&gt;    And I have the same product that already exists in my shopping cart&lt;br/&gt;    When I press "Add to cart"&lt;br/&gt;    Then the product should exist in my shopping cart&lt;br/&gt;    And the quantity of the product should be equal to two&lt;br/&gt;    And the checkout button exists&lt;br/&gt;    &lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="5"&gt;&lt;span class="pass"&gt;AmazonFixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;go to url&lt;/td&gt;
+		&lt;td&gt;https://www.amazon.ca/Monoprice-115365-Select-Mini-Printer/dp/B01FL49VZE/ref=sr_1_1?ie=UTF8&amp;amp;qid=1488132110&amp;amp;sr=8-1&amp;amp;keywords=3d+printer&lt;/td&gt;
+		&lt;td colspan="2"&gt;addProductToCart?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;go to url &lt;span class="error"&gt;Method setScript[1] not found in com.kevinnam.fitnesse.AmazonFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="error"&gt;addProductToCart?&lt;/td&gt;
+		&lt;td class="error"&gt;product name &lt;span class="error"&gt;Method setHttpsWwwAmazonCaMonoprice115365SelectMiniPrinterDpB01FL49VZERefSr_1_1IeUTF8Qid1488132110Sr81Keywords3dPrinter[1] not found in com.kevinnam.fitnesse.AmazonFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="error"&gt;[&lt;span class="diff"&gt;fal&lt;/span&gt;s&lt;span class="diff"&gt;e&lt;/span&gt;] &lt;span class="fail"&gt;expected [&lt;/span&gt;&lt;span class="diff"&gt;productI&lt;/span&gt;&lt;span class="fail"&gt;s&lt;/span&gt;&lt;span class="diff"&gt;InCart?&lt;/span&gt;&lt;span class="fail"&gt;]&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="error"&gt;checkoutButtonExists?&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="5"&gt;&lt;pre&gt;__EXCEPTION__:org.openqa.selenium.WebDriverException: unknown error: unhandled inspector error: {"code":-32603,"message":"Cannot navigate to invalid URL"}
+  (Session info: chrome=56.0.2924.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Mac OS X 10.12.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 56 milliseconds
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=/var/folders/rf/80dtr44107l_56_w01tpyjnm0000gn/T/.org.chromium.Chromium.zdI9yy}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: a6fc4ff1d9159a3ca8e1653957ba2eff
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_111]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_111]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_111]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) [rt.jar:1.8.0_111]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216) [selenium-server-standalone-3.1.0.jar:9.2.15.v20160210]
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168) [selenium-server-standalone-3.1.0.jar:9.2.15.v20160210]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635) [selenium-server-standalone-3.1.0.jar:9.2.15.v20160210]
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:322) [selenium-server-standalone-3.1.0.jar:9.2.15.v20160210]
+	at com.kevinnam.fitnesse.AmazonFixture.setGoToUrl(AmazonFixture.java:29) [assignment-2-ecse428-1.0-SNAPSHOT.jar]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) [rt.jar:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Method.java:498) [rt.jar:1.8.0_111]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.handle(SlimService.java:168) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.accept(SlimService.java:138) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-standalone.jar:20161106]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;https://www.amazon.ca/Monoprice-115365-Select-Mini-Printer/dp/B01FL49VZE/ref=sr_1_1?ie=UTF8&amp;amp;qid=1488132110&amp;amp;sr=8-1&amp;amp;keywords=3d+printer &lt;span class="error"&gt;Method setScript[1] not found in com.kevinnam.fitnesse.AmazonFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="error"&gt;true&lt;/td&gt;
+		&lt;td class="error"&gt;Monoprice 115365 Monoprice Select Mini 3D Printer &lt;span class="error"&gt;Method setHttpsWwwAmazonCaMonoprice115365SelectMiniPrinterDpB01FL49VZERefSr_1_1IeUTF8Qid1488132110Sr81Keywords3dPrinter[1] not found in com.kevinnam.fitnesse.AmazonFixture.&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="error"&gt;[&lt;span class="diff"&gt;fals&lt;/span&gt;e] &lt;span class="fail"&gt;expected [&lt;/span&gt;&lt;span class="diff"&gt;tru&lt;/span&gt;&lt;span class="fail"&gt;e]&lt;/span&gt;&lt;/td&gt;
+		&lt;td class="error"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="5"&gt;&lt;pre&gt;__EXCEPTION__:org.openqa.selenium.WebDriverException: unknown error: unhandled inspector error: {"code":-32603,"message":"Cannot navigate to invalid URL"}
+  (Session info: chrome=56.0.2924.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Mac OS X 10.12.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5 milliseconds
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=/var/folders/rf/80dtr44107l_56_w01tpyjnm0000gn/T/.org.chromium.Chromium.zdI9yy}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: a6fc4ff1d9159a3ca8e1653957ba2eff
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_111]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_111]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_111]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) [rt.jar:1.8.0_111]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216) [selenium-server-standalone-3.1.0.jar:9.2.15.v20160210]
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168) [selenium-server-standalone-3.1.0.jar:9.2.15.v20160210]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635) [selenium-server-standalone-3.1.0.jar:9.2.15.v20160210]
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:322) [selenium-server-standalone-3.1.0.jar:9.2.15.v20160210]
+	at com.kevinnam.fitnesse.AmazonFixture.setGoToUrl(AmazonFixture.java:29) [assignment-2-ecse428-1.0-SNAPSHOT.jar]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) [rt.jar:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Method.java:498) [rt.jar:1.8.0_111]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.handle(SlimService.java:168) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.accept(SlimService.java:138) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-standalone.jar:20161106]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;</content>
+    <relativePageName>TwoMinuteExample</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='fitnesse.slim.test'}</instruction>
+        <slimResult>pass(fitnesse.slim.test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.slim.test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='fitnesse.fixtures'}</instruction>
+        <slimResult>pass(fitnesse.fixtures)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.fixtures</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_2', instruction='import', path='org.openqa.selenium'}</instruction>
+        <slimResult>pass(org.openqa.selenium)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>org.openqa.selenium</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_3', instruction='import', path='com.kevinnam.fitnesse'}</instruction>
+        <slimResult>pass(com.kevinnam.fitnesse)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_3</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>com.kevinnam.fitnesse</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='AmazonFixture', args=[]}</instruction>
+        <slimResult>pass(AmazonFixture)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>AmazonFixture</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setGoToUrl', args=[https://www.amazon.ca/Monoprice-115365-Select-Mini-Printer/dp/B01FL49VZE/ref=sr_1_1?ie=UTF8&amp;qid=1488132110&amp;sr=8-1&amp;keywords=3d+printer]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setProductName', args=[Monoprice 115365 Monoprice Select Mini 3D Printer]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_5</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_7', instruction='call', instanceName='decisionTable_1', methodName='addProductToCart', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_7</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_8', instruction='call', instanceName='decisionTable_1', methodName='productIsInCart', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_8</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_9', instruction='call', instanceName='decisionTable_1', methodName='checkoutButtonExists', args=[]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_9</instructionId>
+                    <col>4</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_0', instruction='make', instanceName='decisionTable_2', className='AmazonFixture', args=[]}</instruction>
+        <slimResult>pass(AmazonFixture)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_2_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>AmazonFixture</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_4', instruction='call', instanceName='decisionTable_2', methodName='setScript', args=[go to url]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_4</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>Method setScript[1] not found in com.kevinnam.fitnesse.AmazonFixture.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_5', instruction='call', instanceName='decisionTable_2', methodName='setGoToUrl', args=[addProductToCart?]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_5</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_6', instruction='call', instanceName='decisionTable_2', methodName='setHttpsWwwAmazonCaMonoprice115365SelectMiniPrinterDpB01FL49VZERefSr_1_1IeUTF8Qid1488132110Sr81Keywords3dPrinter', args=[product name]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_6</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>Method setHttpsWwwAmazonCaMonoprice115365SelectMiniPrinterDpB01FL49VZERefSr_1_1IeUTF8Qid1488132110Sr81Keywords3dPrinter[1] not found in com.kevinnam.fitnesse.AmazonFixture.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_8', instruction='call', instanceName='decisionTable_2', methodName='addProductToCart', args=[]}</instruction>
+        <slimResult>fail(a=false;e=productIsInCart?)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>decisionTable_2_8</instructionId>
+                    <col>3</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>false</actual>
+                              <expected>productIsInCart?</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_10', instruction='call', instanceName='decisionTable_2', methodName='setScript', args=[https://www.amazon.ca/Monoprice-115365-Select-Mini-Printer/dp/B01FL49VZE/ref=sr_1_1?ie=UTF8&amp;qid=1488132110&amp;sr=8-1&amp;keywords=3d+printer]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_10</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>Method setScript[1] not found in com.kevinnam.fitnesse.AmazonFixture.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_11', instruction='call', instanceName='decisionTable_2', methodName='setGoToUrl', args=[true]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_11</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_12', instruction='call', instanceName='decisionTable_2', methodName='setHttpsWwwAmazonCaMonoprice115365SelectMiniPrinterDpB01FL49VZERefSr_1_1IeUTF8Qid1488132110Sr81Keywords3dPrinter', args=[Monoprice 115365 Monoprice Select Mini 3D Printer]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_12</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>Method setHttpsWwwAmazonCaMonoprice115365SelectMiniPrinterDpB01FL49VZERefSr_1_1IeUTF8Qid1488132110Sr81Keywords3dPrinter[1] not found in com.kevinnam.fitnesse.AmazonFixture.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_14', instruction='call', instanceName='decisionTable_2', methodName='addProductToCart', args=[]}</instruction>
+        <slimResult>fail(a=false;e=true)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>decisionTable_2_14</instructionId>
+                    <col>3</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>false</actual>
+                              <expected>true</expected>
+                            </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/bin/java -cp /Users/knam/dev/fitnesse-standalone.jar:/Users/knam/dev/selenium-server-standalone-3.1.0.jar:/Users/knam/.m2/repository/com/kevinnam/assignment-2-ecse428/1.0-SNAPSHOT/assignment-2-ecse428-1.0-SNAPSHOT.jar:lib/*.jar fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut>Setting up ChromeDriver... 
+Done!
+
+Attempting to find Add to cart button... 
+Found!
+
+Clicking add to cart button
+Going to https://www.amazon.ca/gp/cart/view.html/ref=nav_cart
+Attempting to find checkout button
+Found checkout button.
+Setting up ChromeDriver... 
+Done!
+
+Attempting to find Add to cart button... 
+No add to cart button present
+Attempting to find Add to cart button... 
+No add to cart button present
+</stdOut>
+    <stdErr>Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 38947
+
+Only local connections are allowed.
+
+Mar 01, 2017 12:47:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+
+Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 2625
+
+Only local connections are allowed.
+
+Mar 01, 2017 12:47:59 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+
+Mar 01, 2017 12:48:00 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:00 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:01 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:01 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:02 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:02 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:03 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:03 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:04 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:04 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:05 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:05 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:06 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:06 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:07 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:07 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:08 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:08 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:09 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:09 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:10 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:10 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:10 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:11 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:11 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:12 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:12 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:13 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:13 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:14 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:14 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:15 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:15 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:16 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:17 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:17 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:18 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:18 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:19 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:19 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:20 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+Mar 01, 2017 12:48:20 AM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.id: add-to-cart-button)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: add-to-cart-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.1.0', revision: '86a5d70', time: '2017-02-16 07:57:44 -0800'
+System info: host: 'Kevins-MacBook-Pro.local', ip: 'fe80:0:0:0:8f5:3493:d99:db8a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:651)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.kevinnam.fitnesse.AmazonFixture.addProductToCart(AmazonFixture.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47)
+	at fitnesse.slim.SlimService.handle(SlimService.java:168)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176)
+	at fitnesse.slim.SlimService.accept(SlimService.java:138)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+
+
+</stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>29511</totalRunTimeInMillis>
+</testResults>
+

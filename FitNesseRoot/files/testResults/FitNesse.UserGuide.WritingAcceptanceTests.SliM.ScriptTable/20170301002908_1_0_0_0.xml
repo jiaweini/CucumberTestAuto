@@ -1,0 +1,319 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>FitNesse.UserGuide.WritingAcceptanceTests.SliM.ScriptTable</rootPath>
+    <result>
+    <counts>
+      <right>6</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-03-01T00:29:09-05:00</date>
+    <runTimeInMillis>115</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FitNesse.UserGuide.WritingAcceptanceTests.SliM.SetUp"&gt;.FitNesse.UserGuide.WritingAcceptanceTests.SliM.SetUp&lt;/a&gt; &lt;a href="FitNesse.UserGuide.WritingAcceptanceTests.SliM.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;setup&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.slim.test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;fitnesse.fixtures&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;login dialog driver&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Bob&lt;/td&gt;
+		&lt;td colspan="2"&gt;xyzzy&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;login with username&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Bob&lt;/td&gt;
+		&lt;td&gt;and password&lt;/td&gt;
+		&lt;td colspan="2"&gt;xyzzy&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;login message&lt;/td&gt;
+		&lt;td colspan="3"&gt;&lt;span class="pass"&gt;Bob logged in.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;reject&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;login with username&lt;/td&gt;
+		&lt;td&gt;Bob&lt;/td&gt;
+		&lt;td&gt;and password&lt;/td&gt;
+		&lt;td&gt;bad password&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;login message&lt;/td&gt;
+		&lt;td colspan="3"&gt;&lt;span class="pass"&gt;Bob not logged in.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;check not&lt;/td&gt;
+		&lt;td&gt;login message&lt;/td&gt;
+		&lt;td colspan="3"&gt;&lt;span class="pass"&gt;Bob logged in.&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor8"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;login with username&lt;/td&gt;
+		&lt;td&gt;Bob&lt;/td&gt;
+		&lt;td&gt;and password&lt;/td&gt;
+		&lt;td&gt;xyzzy&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor8"&gt;
+		&lt;td&gt;note&lt;/td&gt;
+		&lt;td colspan="4"&gt;this is a comment&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td colspan="4"&gt;number of login attempts&lt;/td&gt;
+	&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;$symbol&amp;lt;-[Bob logged in.]&lt;/td&gt;
+		&lt;td colspan="4"&gt;login message&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;The fixture for this table is:&lt;pre&gt;public class LoginDialogDriver {
+  private String userName;
+  private String password;
+  private String message;
+  private int loginAttempts;
+
+  public LoginDialogDriver(String userName, String password) {
+    this.userName = userName;
+    this.password = password;
+  }
+
+  public boolean loginWithUsernameAndPassword(String userName, String password) {
+    loginAttempts++;
+    boolean result = this.userName.equals(userName) &amp;amp;&amp;amp; this.password.equals(password);
+    if (result)
+      message = String.format("%s logged in.", this.userName);
+    else
+      message = String.format("%s not logged in.", this.userName);
+    return result;
+  }
+
+  public String loginMessage() {
+    return message;
+  }
+
+  public int numberOfLoginAttempts() {
+    return loginAttempts;
+  }
+} &lt;/pre&gt;
+&lt;br/&gt;&lt;br/&gt;This should be pretty clear.  Each row is a single instruction in the script.&lt;br/&gt;&lt;br/&gt;The first row is simply the word "Script" followed by the name and constructor arguments of the fixture (known as the "actor") that will be used by the rest of the table.  If there is no actor specified then the previous script table's actor on this test page will be used.&lt;br/&gt;&lt;br/&gt;The first cell could also have been &lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Script:login dialog driver&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Bob&lt;/td&gt;
+		&lt;td&gt;xyzzy&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Most instructions involve some kind of function call.  By default, the name of the function is assembled from tokens in &lt;i&gt;every other&lt;/i&gt; cell.  The arguments of the function are the intervening cells. Appending ";" to the end of a function name in a cell invokes sequential argument processing, which means that the arguments to the function are all subsequent cells.&lt;br/&gt;&lt;br/&gt;&lt;i&gt;Interposing Function Call (Default)&lt;/i&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="hidden"&gt;
+		&lt;td colspan="4"&gt;comment&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;login with username&lt;/td&gt;
+		&lt;td&gt;Bob&lt;/td&gt;
+		&lt;td&gt;and password&lt;/td&gt;
+		&lt;td&gt;xyzzy&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;i&gt;Sequential Argument Processing Function Call&lt;/i&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="hidden"&gt;
+		&lt;td colspan="3"&gt;comment&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;login with username and password;&lt;/td&gt;
+		&lt;td&gt;Bob&lt;/td&gt;
+		&lt;td&gt;xyzzy&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;ul&gt;
+	&lt;li&gt;A function alone in a row will turn &lt;span class="red"&gt;red&lt;/span&gt; or &lt;span class="green"&gt;green&lt;/span&gt; if it returns a boolean.  Otherwise it will simply remain uncolored.&lt;/li&gt;
+	&lt;li&gt;If &lt;a href="FitNesse.UserGuide.WritingAcceptanceTests.SliM.SymbolsInTables"&gt;a symbol assignment&lt;/a&gt; is in the first cell, then it should be followed by a function.  The symbol is assigned the value returned by that function.&lt;/li&gt;
+	&lt;li&gt;If the word &lt;b&gt;&lt;i&gt;check&lt;/i&gt;&lt;/b&gt; is in the first cell of a row, then a function call follows it.  The last cell of the table is the expression we expect to be matched by what the function actually returns.&lt;/li&gt;
+	&lt;li&gt;If the word &lt;b&gt;&lt;i&gt;check not&lt;/i&gt;&lt;/b&gt; is in the first cell of a row, then a function call follows it.  The last cell of the table is the expression we expect &lt;i&gt;not&lt;/i&gt; to be matched by what the function actually returns.&lt;/li&gt;
+	&lt;li&gt;If the word &lt;b&gt;&lt;i&gt;ensure&lt;/i&gt;&lt;/b&gt; is in the first cell, then it should be followed by a function that should return a boolean &lt;i&gt;true&lt;/i&gt; for &lt;span class="green"&gt;green&lt;/span&gt; and &lt;i&gt;false&lt;/i&gt; for &lt;span class="red"&gt;red&lt;/span&gt;.&lt;/li&gt;
+	&lt;li&gt;If the word &lt;b&gt;&lt;i&gt;reject&lt;/i&gt;&lt;/b&gt; is in the first cell, then it should be followed by a function that should return a boolean &lt;i&gt;false&lt;/i&gt; for &lt;span class="green"&gt;green&lt;/span&gt; and &lt;i&gt;true&lt;/i&gt; for &lt;span class="red"&gt;red&lt;/span&gt;.&lt;/li&gt;
+	&lt;li&gt;If the word &lt;b&gt;&lt;i&gt;note&lt;/i&gt;&lt;/b&gt; is in the first cell, all other cells in that row will be ignored.&lt;ul&gt;
+	&lt;li&gt;Or if the first cell is blank.&lt;/li&gt;
+	&lt;li&gt;Or if the first cell begins with # or *.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+	&lt;li&gt;If the word &lt;b&gt;&lt;i&gt;show&lt;/i&gt;&lt;/b&gt; is in the first cell, then it should be followed by a function.  A new cell will be added when the test is run, and it will contain the return value of the function.&lt;/li&gt;
+	&lt;li&gt;If the word &lt;b&gt;&lt;i&gt;start&lt;/i&gt;&lt;/b&gt; appears in the first cell, then the rest of the row is the name and constructor arguments for a new actor, which replaces the existing actor.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    <relativePageName>ScriptTable</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='fitnesse.slim.test'}</instruction>
+        <slimResult>pass(fitnesse.slim.test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.slim.test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='fitnesse.fixtures'}</instruction>
+        <slimResult>pass(fitnesse.fixtures)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>fitnesse.fixtures</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_0', instruction='make', instanceName='scriptTableActor', className='LoginDialogDriver', args=[Bob, xyzzy]}</instruction>
+        <slimResult>pass(login dialog driver)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>login dialog driver</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_1', instruction='call', instanceName='scriptTableActor', methodName='loginWithUsernameAndPassword', args=[Bob, xyzzy]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_2', instruction='call', instanceName='scriptTableActor', methodName='loginMessage', args=[]}</instruction>
+        <slimResult>pass(Bob logged in.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_2</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>Bob logged in.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_3', instruction='call', instanceName='scriptTableActor', methodName='loginWithUsernameAndPassword', args=[Bob, bad password]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_3</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>RejectActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_4', instruction='call', instanceName='scriptTableActor', methodName='loginMessage', args=[]}</instruction>
+        <slimResult>pass(Bob not logged in.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_4</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>Bob not logged in.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_5', instruction='call', instanceName='scriptTableActor', methodName='loginMessage', args=[]}</instruction>
+        <slimResult>pass(a=Bob not logged in.;e=Bob logged in.)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_5</instructionId>
+                    <col>2</col>
+                              <row>5</row>
+                    <type>RejectedValueExpectation</type>
+                    <actual>Bob not logged in.</actual>
+                              <expected>Bob logged in.</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_6', instruction='call', instanceName='scriptTableActor', methodName='loginWithUsernameAndPassword', args=[Bob, xyzzy]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_6</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_7', instruction='call', instanceName='scriptTableActor', methodName='numberOfLoginAttempts', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_1_7</instructionId>
+                    <col>0</col>
+                              <row>8</row>
+                    <type>ShowActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_8', instruction='callAndAssign', symbolName='symbol', instanceName='scriptTableActor', methodName='loginMessage', args=[]}</instruction>
+        <slimResult>$symbol&lt;-[Bob logged in.]</slimResult>
+                <expectation>
+                    <instructionId>scriptTable_1_8</instructionId>
+                    <col>0</col>
+                              <row>9</row>
+                    <type>SymbolAssignmentExpectation</type>
+                                        <evaluationMessage>$symbol&lt;-[Bob logged in.]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_0', instruction='make', instanceName='scriptTableActor', className='LoginDialogDriver', args=[Bob, xyzzy]}</instruction>
+        <slimResult>pass(Script:login dialog driver)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_2_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Script:login dialog driver</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/bin/java -cp /Users/knam/dev/fitnesse-standalone.jar:lib/*.jar fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>429</totalRunTimeInMillis>
+</testResults>
+

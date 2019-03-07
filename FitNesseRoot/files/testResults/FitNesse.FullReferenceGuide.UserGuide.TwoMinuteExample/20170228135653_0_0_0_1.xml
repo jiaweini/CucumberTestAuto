@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>FitNesse.FullReferenceGuide.UserGuide.TwoMinuteExample</rootPath>
+    <executionLog>
+    <testSystem>fit:fit.FitServer</testSystem>
+    <command>java -cp /Users/knam/dev/fitnesse-standalone.jar:/Users/knam/IdeaProjects/assignment2ecse428/:lib/*.jar fit.FitServer Kevins-MacBook-Pro.local 64568 3863</command>
+    <exitCode>143</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+    <exception>FitClient was killed</exception>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>5222</totalRunTimeInMillis>
+</testResults>
+

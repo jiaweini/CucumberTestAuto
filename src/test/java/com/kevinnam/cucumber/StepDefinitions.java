@@ -18,7 +18,7 @@ public class StepDefinitions {
 
     // Variables
     private WebDriver driver;
-    private final String PATH_TO_CHROME_DRIVER = "/Users/knam/Downloads/chromedriver";
+    private final String PATH_TO_CHROME_DRIVER = "/Users/Jiawei/Downloads/chromedriver";
     private final String PRODUCT_URL = "https://www.amazon.ca/Monoprice-115365-Select-Mini-Printer/dp/B01FL49VZE/ref=sr_1_1?ie=UTF8&qid=1488132110&sr=8-1&keywords=3d+printer";
     private final String PRODUCT_NAME = "Monoprice 115365 Monoprice Select Mini 3D Printer";
     private final String DELETE_BTN_NAME = "submit.delete.C3NLW69582M4B4";

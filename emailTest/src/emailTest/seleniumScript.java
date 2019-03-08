@@ -4,8 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.seleniumhq.jetty9.server.HttpChannelState.Action;
 
 
 public class seleniumScript {
@@ -19,8 +21,8 @@ public class seleniumScript {
     public static void givenOnSendEmailPage() throws Throwable {
     	System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		
 		//login
 		//   -get on login page
@@ -31,7 +33,7 @@ public class seleniumScript {
                 .until(ExpectedConditions.elementToBeClickable(By.id("identifierNext")));
         nextBtn.click();
     	//   -enter password and click
-        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("1234");
+        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("123414124142142");
         WebElement signInBtn = (new WebDriverWait(driver, 10))
                 .until(ExpectedConditions.elementToBeClickable(By.id("passwordNext")));
         signInBtn.click();
@@ -47,10 +49,13 @@ public class seleniumScript {
     //Given("^When I fill an email address under “To”$")
     public static void whenFillTo() throws Throwable {
     	
-    
-    	
-    	
-    	driver.findElement(By.className("_2BCZP_W9VLRv-NN3SC1nnS fxwJwkd4_ngPI8kgzfk88 _7fiIAr1gtfi5q48-tfia-")).sendKeys("jiaweini@live.com");
+    	Actions builder = new Actions(driver);
+    	org.openqa.selenium.interactions.Action seriesOfActions = builder
+    		.sendKeys("jiawei.ni@live.com")
+    		.build();
+    		
+    	seriesOfActions.perform() ;
+    	driver.findElement(By.className("wA")).sendKeys("jiaweini@live.com");
     	//ms-BasePicker-input pickerInput_269bfa71
     	
     	

@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class seleniumScript {
     private static WebDriver driver;
 
-    private final static String SEND_EMAIL_URL = "https://mail.google.com/mail/u/0/#inbox?compose=new";
+    private final static String SEND_EMAIL_URL = "https://outlook.office365.com/mail/deeplink/compose?popoutv2=1";
     private final String SEND_BTN = "send";
 
     
@@ -26,53 +26,39 @@ public class seleniumScript {
 		//   -get on login page
 		driver.get(SEND_EMAIL_URL);
 		//   -enter email and click next
-		driver.findElement(By.xpath("//input[@id='identifierId']")).sendKeys("jiaweini0@gmail.com");
+		driver.findElement(By.xpath("//input[@id='i0116']")).sendKeys("jiawei.ni@mail.mcgill.ca");
 		WebElement nextBtn = (new WebDriverWait(driver, 10))
-                .until(ExpectedConditions.elementToBeClickable(By.id("identifierNext")));
+                .until(ExpectedConditions.elementToBeClickable(By.id("idSIButton9")));
         nextBtn.click();
     	//   -enter password and click
-        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("1234");
+        driver.findElement(By.id("passwordInput")).sendKeys("12");
+
         WebElement signInBtn = (new WebDriverWait(driver, 10))
-                .until(ExpectedConditions.elementToBeClickable(By.id("passwordNext")));
+                .until(ExpectedConditions.elementToBeClickable(By.id("submitButton")));
         signInBtn.click();
-        
-        //   -go to send email page
-        //driver.get(SEND_EMAIL_URL);
-        WebElement composeBtn = (new WebDriverWait(driver, 10))
-                .until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[7]/div[3]/div/div[2]/div[1]/div[1]/div[1]/div[2]/div/div/div/div[1]/div/div")));
-        composeBtn.click();
+        //   -stay logged in? yes
+        WebElement stayBtn = (new WebDriverWait(driver, 10))
+                .until(ExpectedConditions.elementToBeClickable(By.id("idSIButton9")));
+        stayBtn.click();
     }
     
     
     //Given("^When I fill an email address under “To”$")
     public static void whenFillTo() throws Throwable {
-    	
-    
-    	
-    	
-    	driver.findElement(By.className("_2BCZP_W9VLRv-NN3SC1nnS fxwJwkd4_ngPI8kgzfk88 _7fiIAr1gtfi5q48-tfia-")).sendKeys("jiaweini@live.com");
-    	//ms-BasePicker-input pickerInput_269bfa71
-    	
-    	
-    	
-    	
-    	
-    	
-    	//WebElement sendBtn = (new WebDriverWait(driver, 10))
-        //        .until(ExpectedConditions.elementToBeClickable(By.name("Attach")));
-        //sendBtn.click();
-    	
-    	
+    	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    	driver.findElement(By.className("ms-BasePicker-input")).sendKeys("jiaweini@live.com");
     }
     
-    
-    
+    //And("^I drag an image into the page$")
+    public static void andDragImg() throws Throwable {
+    	
+    }
     
     
 	public static void main(String[] args) throws Throwable{
 		givenOnSendEmailPage();
 		whenFillTo();
-		
+		andDragImg();
 		/*
 		WebElement btn = (new WebDriverWait(driver, 10))
                 .until(ExpectedConditions.elementToBeClickable(By.id("send")));

@@ -31,7 +31,7 @@ public class seleniumScript {
         nextBtn.click();
         Thread.sleep(500);
     	//   -enter password and click
-        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("123123");
+        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("123");
         Thread.sleep(500);
         WebElement signInBtn = (new WebDriverWait(driver, 10))
                 .until(ExpectedConditions.elementToBeClickable(By.id("passwordNext")));
@@ -42,7 +42,7 @@ public class seleniumScript {
         WebElement composeBtn = (new WebDriverWait(driver, 10))
                 .until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[7]/div[3]/div/div[2]/div[1]/div[1]/div[1]/div[2]/div/div/div/div[1]/div/div")));
         composeBtn.click();
-        Thread.sleep(8000);
+        Thread.sleep(2000);
         
         
         return;
